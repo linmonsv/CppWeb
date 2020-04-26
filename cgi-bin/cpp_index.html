@@ -1,0 +1,76 @@
+<html>
+<body>
+<h1>CGI Test</h1>
+
+<a href="cpp_99_listenv.cgi">List ENV</a><br/><br/>
+
+<a href="cpp_00_cplusplus.cgi">Hello World</a><br/><br/>
+
+<a href="cpp_01_get.cgi?first_name=ZARA&last_name=ALI">Have a attention to URL</a><br/>
+
+<h2>method = get</h2>
+<form action="cpp_01_get.cgi" method="get">
+first_name : <input type="text" name="first_name"><br/>
+last_name : <input type="text" name="last_name" />
+<input type="submit" value="Submit" />
+</form>
+
+<h2>method = post & Submit form & InputText</h2>
+<form action="cpp_01_get.cgi" method="post">
+first_name : <input type="text" name="first_name"><br/>
+last_name : <input type="text" name="last_name" />
+<input type="submit" value="Submit" />
+</form>
+
+<h2>CheckBox</h2>
+<form action="cpp_02_checkbox.cgi" 
+         method="POST" 
+         target="_blank">
+<input type="checkbox" name="maths" value="on" />Math
+<input type="checkbox" name="physics" value="on" />Physics
+<input type="submit" value="Choose" />
+</form>
+
+<h2>RadioButton</h2>
+<form action="cpp_03_radiobutton.cgi" 
+         method="post" 
+         target="_blank">
+<input type="radio" name="subject" value="maths" 
+                                    checked="checked"/>Math
+<input type="radio" name="subject" value="physics" />Physics
+<input type="submit" value="Choose" />
+</form>
+
+<h2>TextArea</h2>
+<form action="cpp_04_textarea.cgi" 
+         method="post" 
+         target="_blank">
+<textarea name="textcontent" cols="40" rows="4">
+please input text here ......
+</textarea>
+<input type="submit" value="Submit" />
+</form>
+
+<h2>Dropdown</h2>
+<form action="cpp_05_dropdown.cgi" 
+                       method="post" target="_blank">
+<select name="dropdown">
+<option value="Maths" selected>Math</option>
+<option value="Physics">Physics</option>
+</select>
+<input type="submit" value="Submit"/>
+</form>
+
+<h2>Set Cookies</h2>
+
+<h2>Get Cookies</h2>
+
+<h2>Upload</h2>
+   <form enctype="multipart/form-data" 
+            action="cpp_30_uploadfile.cgi" 
+            method="post">
+   <p>File : <input type="file" name="userfile" /></p>
+   <p><input type="submit" value="Upload" /></p>
+   </form>
+</body>
+</html>
